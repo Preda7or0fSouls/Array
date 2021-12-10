@@ -1,18 +1,26 @@
 package PaqueteInicial;
 
 public class RellenaMatriz {
-    public static void main(String[] args) {
-        int[][] matriz = new int[10][10];
-        rellenaMatriz(matriz);
-    }
+    public static void mostrarMatriz(int matriz[][]) {
+        int i, j;
+        int filas = matriz.length;
+        int columnas = matriz[0].length;
 
-    public static void rellenaMatriz(int[][] matriz) {
-        for (int i = 0; i < matriz.length; i++) {
-            for (int j = 0; j < matriz[0].length; j++) {
-                matriz[i][j] = (int) Math.round(Math.random());
+        for (i = 0; i < filas; i++) {
+
+            for (j = 0; j < columnas; j++) {
                 System.out.print(matriz[i][j] + " ");
             }
+
             System.out.println();
         }
+    }
+
+    public static void main(String[] args) {
+        int[][] miMatriz = new int[10][10];
+
+        Utilidades.rellenaMatriz(miMatriz, 0, 1);
+
+        mostrarMatriz(miMatriz);
     }
 }
