@@ -1,8 +1,18 @@
 package PaqueteInicial;
+
 public class RellenaMatriz {
-    /*Rellena una matriz de 10 x 10 con valores aleatorios (0 o 1) e imprímela de la siguiente forma:*/
     public static void main(String[] args) {
-        Utilidades.rellenaMatriz(10, 0, 1);
-        System.out.println(RellenaMatriz);
+        int[][] matriz = new int[10][10];
+        rellenaMatriz(matriz);
+    }
+
+    public static void rellenaMatriz(int[][] matriz) {
+        for (int i = 0; i < matriz.length; i++) {
+            for (int j = 0; j < matriz[0].length; j++) {
+                matriz[i][j] = (int) Math.round(Math.random());
+                System.out.print(matriz[i][j] + " ");
+            }
+            System.out.println();
+        }
     }
 }
