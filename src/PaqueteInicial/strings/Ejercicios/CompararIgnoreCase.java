@@ -1,4 +1,5 @@
 package Ejercicios;
+
 import Utiles.Utilidades;
 
 public class CompararIgnoreCase {
@@ -13,9 +14,9 @@ public class CompararIgnoreCase {
 		if (0 == resultado) {
 			System.out.println("Las cadenas tienen el mismo valor");
 		} else if (resultado < 0) {
-			System.out.println(cadena1 + "su valor es mayor que " + cadena2);
+			System.out.println(cadena1 + " su valor es mayor que " + cadena2);
 		} else {
-			System.out.println(cadena1 + "su valor es menor que " + cadena2);
+			System.out.println(cadena1 + " su valor es menor que " + cadena2);
 		}
 	}
 }
