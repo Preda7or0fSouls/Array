@@ -17,9 +17,11 @@ public class Longitud3 {
 	}
 
 	public static void main(String[] args) {
-		String cadena = Utilidades.leerCadena("Introduce una frase");
-		String palabras[] = Utilidades.dividirEnPalabras(cadena);
-		int longitud = Utilidades.leerEntero("Que tamaño de palabras deseas contar");
+		String cadena;
+		int longitud;
+		cadena = Utiles.Utilidades.leerCadena("Introduce una frase");
+		String palabras[] = Utiles.Utilidades.dividirEnPalabras(cadena);
+		longitud = Utiles.Utilidades.leerEntero("Que tamaño de palabras deseas contar");
 		System.out.printf("Todas las cadenas son cortas," + tamañopalabras(palabras, longitud), longitud);
 	}
 }

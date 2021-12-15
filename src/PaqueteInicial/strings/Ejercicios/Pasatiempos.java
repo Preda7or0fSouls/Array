@@ -19,7 +19,8 @@ public class Pasatiempos {
 
     public static void main(String[] args) {
         String solucion;
-        String cadena = Utiles.Utilidades.leerCadena("Introduce cadena: ");
+        String cadena;
+        cadena = Utiles.Utilidades.leerCadena("Introduce cadena: ");
 
         solucion = crearPasatempo(cadena);
 

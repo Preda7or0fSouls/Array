@@ -13,7 +13,8 @@ public class Invertida {
     }
 
     public static void main(String[] args) {
-        String invertida = inversion(
+        String invertida;
+        invertida = inversion(
                 Utiles.Utilidades.dividirEnPalabras(Utiles.Utilidades.leerCadena("Introduce texto: ")));
         System.out.println(invertida);
     }

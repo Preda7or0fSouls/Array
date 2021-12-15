@@ -6,7 +6,8 @@ public class Siglas {
         String siglas = "";
 
         for (String palabra : palabras) {
-            char letra = palabra.charAt(0);
+            char letra;
+            letra = palabra.charAt(0);
             if (Character.isUpperCase(letra)) {
                 siglas = siglas + letra;
             }

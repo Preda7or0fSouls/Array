@@ -9,8 +9,9 @@ public class Ends {
 	}
 
 	public static void main(String[] args) {
-		String cadena1 = Utilidades.leerCadena("Introduce la 1ª cadena");
-		String cadena2 = Utilidades.leerCadena("Introduce la 2ª cadena");
+		String cadena1, cadena2;
+		cadena1 = Utiles.Utilidades.leerCadena("Introduce la 1ª cadena");
+		cadena2 = Utiles.Utilidades.leerCadena("Introduce la 2ª cadena");
 		if (finalizaEn(cadena1, cadena2)) {
 			System.out.println(cadena1 + " acaba en " + cadena2);
 		} else {
