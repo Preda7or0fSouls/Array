@@ -30,7 +30,7 @@ public class Palabras1 {
 
 	public static void main(String[] args) {
 		String cuentaPalabras;
-		Utilidades.leerCadena("Palabras : " + cuentaPalabras);
+		Utilidades.leerCadena("Palabras : " + cuentaPalabras());
 	}
 
 }
