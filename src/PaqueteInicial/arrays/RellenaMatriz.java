@@ -1,4 +1,3 @@
-package PaqueteInicial;
 
 public class RellenaMatriz {
     public static void mostrarMatriz(int matriz[][]) {

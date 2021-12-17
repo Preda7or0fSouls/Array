@@ -1,4 +1,3 @@
-package PaqueteInicial;
 
 public class HundirLaFlota {
 

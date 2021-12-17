@@ -1,4 +1,4 @@
-package PaqueteInicial;
+
 import java.util.Arrays;
 public class Duplicados {
     public static String duplicados(int[] numeros) {

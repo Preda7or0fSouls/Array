@@ -1,9 +1,6 @@
-package PaqueteInicial;
 
 public class Comunes {
     public static void main(String[] args) {
-        // int [] primero = {1,2,3,4,5,6,7,8,9,10};
-        // int [] segundo = {5,6,7,11,12,13,14};
 
         int[] primero = new int[1000000];
         Utilidades.rellenaArray(primero, 1, 1000000000);
