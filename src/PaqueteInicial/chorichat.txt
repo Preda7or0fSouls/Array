@@ -8,11 +8,14 @@ Estado 1 (sin saludo)
 
 Estado 2 (saludo)
 
-Usuario: "hola" "buenos dias" "buenas" Constesta : "Hola, soy Chorri, tus asistente."
+Usuario: "hola" "buenos dias" "buenas" 
+Constesta : "Hola, soy Chorri, tus asistente."
 
 Estado 3 (frase aleatoria)
 
-"Mmm, es un tema interesante" "No he entendido lo que dices" "Nooo hablooo tu idioma"
+"Mmm, es un tema interesante" 
+"No he entendido lo que dices"
+ "Nooo hablooo tu idioma"
 
 Estado 4 (fin)
 
