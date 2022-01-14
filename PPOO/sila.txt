@@ -1,0 +1,5 @@
+creamos una clase silla sin main(punto de entrada)
+atributos de silla: color,numero de patas,respaldo(si/no),materaial(string),nivel comodidad(1-10).
+la silla tiene un punto de localizacion  para una habitacion(con x e y).
+todos los atributos privados,desde test se deben poder modificar y acceder a su valor(modificar datos)
+En la clase de prueba crear 100 sillas de manera aleatoria
