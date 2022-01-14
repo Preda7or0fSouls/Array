@@ -1,7 +1,9 @@
+package
 
 import java.util.Arrays;
+
 public class Duplicados {
-    public static String duplicados(int[] numeros) {
+	public static String duplicados(int[] numeros) {
 		String duplicados = "";
 		// Recorremos el array buscando el elemento iésimo
 		for (int i = 0; i < numeros.length - 1; i++) {
@@ -25,5 +27,4 @@ public class Duplicados {
 
 	}
 
-}
-}
+}}

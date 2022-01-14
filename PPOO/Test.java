@@ -2,7 +2,7 @@ package PPOO;
 
 import PPOO.Alumno;
 
-public class AlumnoTest {
+public class Test {
     public static void main(String[] args) {
         Alumno a1,a2,a3,a4;
 
