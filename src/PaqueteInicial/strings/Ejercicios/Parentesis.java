@@ -1,6 +1,6 @@
 package Ejercicios;
 
-import Utiles.Utilidades;
+import Utilidades;
 
 public class Parentesis {
 	public static boolean Parentizada(String cadena1) {
