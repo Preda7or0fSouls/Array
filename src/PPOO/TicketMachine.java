@@ -29,6 +29,12 @@ public class TicketMachine {
         balance = 0;
         total = 0;
     }
+    public  TicketMachines(){
+        price = 0;
+        balance = 0;
+        total = 0;
+
+    }
 
     public int getTotal() {
         return total;
@@ -36,7 +42,7 @@ public class TicketMachine {
 
     public void setPrice(int cost) {
 
-        this.total = total;
+        this.price = cost;
     }
 
     /**
@@ -62,6 +68,15 @@ public class TicketMachine {
 
         balance = balance + amount;
     }
+    public  void Prompt(){
+        System.out.print("Please insert the correct amount of money.");
+    }
+    public void ShowPrice(){
+        System.out.print("The price of the ticket is" + price + "cents.")
+    }
+    public  void Empty(){
+        total = = 0;
+    }
 
     /**
      * Print a ticket.
@@ -81,5 +96,6 @@ public class TicketMachine {
         total = total + balance;
         // Clear the balance.
         balance = 0;
+
     }
 }
