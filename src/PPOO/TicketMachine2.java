@@ -10,8 +10,8 @@
  * @version 2016.02.29
  */
 package PPOO;
-public class TicketMachine2
-{
+
+public class TicketMachine2 {
     // The price of a ticket from this machine.
     private int price;
     // The amount of money entered by a customer so far.
@@ -32,8 +32,7 @@ public class TicketMachine2
     /**
      * @Return The price of a ticket.
      */
-    public int getPrice()
-    {
+    public int getPrice() {
 
         return price;
     }
@@ -42,8 +41,7 @@ public class TicketMachine2
      * Return The amount of money already inserted for the
      * next ticket.
      */
-    public int getBalance()
-    {
+    public int getBalance() {
 
         return balance;
     }
@@ -52,19 +50,21 @@ public class TicketMachine2
      * Receive an amount of money from a customer.
      * Check that the amount is sensible.
      */
-    public void insertMoney(int amount)
-    {
-        if(amount > 0) {
+    public void insertMoney(int amount) {
+        if (amount > 0) {
             balance = balance + amount;
-        }
-        else {
+        } else {
             System.out.println("Use a positive amount rather than: " +
                     amount);
         }
     }
-    public void emptyMachine(int total){
-        return total;
-        total = 0;
+
+    public int emptyMachine() {
+        // Creo la variable temporal llamada "x" donde guardar el resultado de total.
+        int x;
+        x = this.total;
+        this.total = 0;
+        return x;
 
     }
 
@@ -73,8 +73,7 @@ public class TicketMachine2
      * reduce the current balance by the ticket price. Print
      * an error message if more money is required.
      */
-    public void printTicket()
-    {
+    public void printTicket() {
         if(balance >= price) {
             // Simulate the printing of a ticket.
             System.out.println("##################");
@@ -91,21 +90,16 @@ public class TicketMachine2
         }
         else {
             System.out.println("You must insert at least: " +
-                    (price - balance) + " more cents.");
-
-        }
-    }
+                               (price - balance) + " more cents.");
 
     /**
      * Return the money in the balance.
      * The balance is cleared.
      */
-    public int refundBalance()
-    {
+    public int refundBalance() {
         int amountToRefund;
         amountToRefund = balance;
         balance = 0;
         return amountToRefund;
     }
 }
-

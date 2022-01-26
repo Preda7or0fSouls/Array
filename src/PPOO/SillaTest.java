@@ -1,6 +1,7 @@
 package PPOO;
 
 public class SillaTest {
+
     public static void main(String[] args) {
 
         Silla[] sillas = new Silla[100];
