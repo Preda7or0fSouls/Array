@@ -33,10 +33,12 @@ public class Book {
     }
 
     public String getAuthor() {
+
         return author;
     }
 
-    public void printAuthor() {
+    public void printAuthor()
+    {
         System.out.print(author);
     }
 
@@ -45,6 +47,7 @@ public class Book {
     }
 
     public void printTitle() {
+
         System.out.print(title);
     }
 }
