@@ -16,10 +16,19 @@ public class Book {
 
     private int pages;
 
-    public Book(String author, String title, int pages) {
+    private String refNumber = "";
+
+    private int borrowed;
+
+    private boolean courseText;
+
+    public Book(String author, String title, int pages, String refNumber, boolean courseText) {
         this.author = author;
         this.title = title;
         this.pages = pages;
+        this.refNumber = refNumber;
+        this.courseText = courseText;
+
     }
 
     /**
@@ -39,15 +48,53 @@ public class Book {
 
     public void printAuthor()
     {
+
         System.out.print(author);
     }
 
     public String getTitle() {
+
         return title;
     }
 
     public void printTitle() {
 
         System.out.print(title);
+    }
+    public int getPages() {
+
+        return pages;
+    }
+    public void setRefNumber(String ref){
+        if(ref.length() >=4 ){
+            refNumber = ref;
+        }else{
+            Sys
+        }
+
+    }
+
+
+    /**
+     * get field
+     *
+     * @return borrowed
+     */
+    public int getBorrowed() {
+        return this.borrowed;
+        borrowed++;
+    }
+
+    /**
+     * set field
+     *
+     * @param borrowed
+     */
+    public void setBorrowed(int borrowed) {
+        this.borrowed = borrowed;
+
+    }
+    public void setCourseText(isCouseText){
+
     }
 }
