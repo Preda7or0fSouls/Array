@@ -1,44 +1,37 @@
 package PPOO;
 public class Heater {
+
     private double temperature;
-    private double max,min,increment;
+    private double min;
+    private double max;
+    private double increment;
 
-    public Heater(double temperature, double max,double min,double increment) {
-
-        temperature = 15.0;
-        this.max = maximo;
-        this.min = minimo;
-        this.increment = incr8ement;
+    public Heater(double min, double max){
+        this.temperature = 15.0;
+        this.max = max;
+        this.min = min;
+        this.increment = 5.0;
     }
 
-    public  void warmer(double temperature,double increment){
-        this.increment = increment;
-        warmer = temperature + increment;
-        if (temperature >max){
-            return warmer;
-        }else{
-            System.out.println("La temperatura es denasiado elevada");
+    public void warmer(){
+        if ((temperature + increment) <= max){
+            temperature = temperature + increment;
         }
     }
 
-    public void cooler(double temperature,double increment) {
-        this.increment = increment;
-        cooler = temperature - increment;
-        if (temperature >min){
-            return cooler;
-        }else{
-            System.out.println("La temperatura es denasiado baja");
+    public void cooler(){
+        if (temperature - increment >= min){
+            temperature = temperature - increment;
         }
-
     }
 
-    public double getTemperature() {
-        return this.temperature;
-
+    public double getTemperature(){
+        return temperature;
     }
 
-
-    public void setIncrement(double increment) {
-        this.increment = increment;
+    public void setIncrement(double inc){
+        if (inc >= 1.0 && inc <= 5.0){
+            increment = inc;
+        }
     }
 }
