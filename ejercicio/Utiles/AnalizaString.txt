@@ -1,0 +1,7 @@
+crear clase string llamada AnalizaString
+leer una cadena texto
+en dicha cadena de texto :
+contar el numero de digitos ,
+el numero de letras 
+ el numero de otros simbolos ,
+ en tres lineas diferentes
