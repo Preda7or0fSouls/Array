@@ -50,8 +50,13 @@ public class MailClient
      * @param to The intended recipient.
      * @param message The text of the message to be sent.
      */
+
     public void sendMailItem(String to, String subject,String message)
     {
+        String data = to;
+        String[] split = data.split(",");
+        for (int i=0; i<split.length; i++)
+            System.out.println(split[i]);
         MailItem item = new MailItem(user, to, subject,message);
         server.post(item);
     }
