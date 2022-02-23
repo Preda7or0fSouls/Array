@@ -11,11 +11,10 @@ import javazoom.jl.player.advanced.AdvancedPlayer;
  * Provide basic playing of MP3 files via the javazoom library.
  * See http://www.javazoom.net/
  *
- * @author David J. Barnes and Michael Kölling
+ * @author David J. Barnes and Michael Kölling.
  * @version 2016.02.29
  */
-
-public class MusicPlayer
+public class MusicPlayer2
 {
     // The current player. It might be null.
     private AdvancedPlayer player;
@@ -77,7 +76,8 @@ public class MusicPlayer
         }
     }
 
-    public void stop(){
+    public void stop()
+    {
         killPlayer();
     }
 
@@ -85,8 +85,8 @@ public class MusicPlayer
      * Set up the player ready to play the given file.
      * @param filename The name of the file to play.
      */
-
-    private void setupPlayer(String filename) {
+    private void setupPlayer(String filename)
+    {
         try {
             InputStream is = getInputStream(filename);
             player = new AdvancedPlayer(is, createAudioDevice());
