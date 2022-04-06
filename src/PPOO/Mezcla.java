@@ -1,12 +1,10 @@
 import java.io.BufferedReader;
-import java.io.BufferedWriter;
+import java.io.FileNotFoundException;
 import java.io.FileReader;
-import java.io.FileWriter;
 import java.io.IOException;
 
 public class Mezcla {
     public static void main(String[] args) {
-
         FileReader fileReader1;
         FileReader fileReader2;
 
@@ -24,10 +22,9 @@ public class Mezcla {
             System.out.print(reader2.readLine());
         } catch (FileNotFoundException e) {
             e.printStackTrace();
-
         } catch (IOException e) {
+
             e.printStackTrace();
         }
-
     }
 }
