@@ -1,4 +1,10 @@
-public class Mezcla{
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class Mezcla {
     public static void main(String[] args) {
 
         FileReader fileReader1;
@@ -7,19 +13,19 @@ public class Mezcla{
         BufferedReader reader1;
         BufferedReader reader2;
 
-        try{
-        fileReader1 = new FileReader("f1.txt");
-        fileReader2 = new FileReader ("f2.txt");
+        try {
+            fileReader1 = new FileReader("f1.txt");
+            fileReader2 = new FileReader("f2.txt");
 
-        reader1 = new BufferedReader(fileReader1);
-        reader2 = new BufferedReader(fileReader2);
+            reader1 = new BufferedReader(fileReader1);
+            reader2 = new BufferedReader(fileReader2);
 
-        System.out.print(reader1.readLine());
-        System.out.print(reader2.readLine());
+            System.out.print(reader1.readLine());
+            System.out.print(reader2.readLine());
         } catch (FileNotFoundException e) {
             e.printStackTrace();
 
-        } catch (IOException e){
+        } catch (IOException e) {
             e.printStackTrace();
         }
 
