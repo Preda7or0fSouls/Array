@@ -5,18 +5,18 @@ import java.io.IOException;
 
 public class Mezcla {
     public static void main(String[] args) {
-        FileReader fileReader1;
-        FileReader fileReader2;
+        FileReader filereader1;
+        FileReader filereader2;
 
         BufferedReader read1;
         BufferedReader read2;
 
         try {
-            fileReader1 = new FileReader("f1.txt");
-            fileReader2 = new FileReader("f2.txt");
+            filereader1 = new FileReader("fichero1.txt");
+            filereader2 = new FileReader("fichero2.txt");
 
-            read1 = new BufferedReader(fileReader1);
-            read2 = new BufferedReader(fileReader2);
+            read1 = new BufferedReader(filereader1);
+            read2 = new BufferedReader(filereader2);
 
             System.out.print(read1.readLine());
             System.out.print(read2.readLine());
